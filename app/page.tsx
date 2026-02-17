@@ -81,9 +81,27 @@ export default function Home() {
       {/* ===== PARA QUEM É ESTE CURSO ===== */}
       <section className="bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
+          {/* Mobile: título + foto lado a lado */}
+          <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
+            <h2 className="font-heading text-3xl font-bold tracking-wide text-gold-dark">
+              PARA QUEM É ESTE CURSO
+            </h2>
+            <div className="relative w-24 shrink-0">
+              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20">
+                <Image
+                  src="/vanusa/para-quem.webp"
+                  alt="Vanuza Aires"
+                  fill
+                  className="object-cover object-top z-10"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-16">
-            {/* Foto — absolute na divisória de baixo */}
-            <div className="relative max-md:hidden mx-auto w-64 shrink-0 sm:w-72 md:absolute md:bottom-0 md:left-0 md:mx-0 md:w-[320px] lg:w-[380px]">
+            {/* Foto — desktop: absolute bottom */}
+            <div className="relative hidden md:block md:absolute md:bottom-0 md:left-0 md:w-[320px] lg:w-[380px]">
               <div className="relative aspect-[3/4] w-full">
                 <Image
                   src="/vanusa/para-quem.webp"
@@ -100,7 +118,7 @@ export default function Home() {
 
             {/* Conteúdo */}
             <div className="flex-1">
-              <h2 className="mb-6 font-heading text-3xl font-bold tracking-wide text-gold-dark sm:text-4xl">
+              <h2 className="mb-6 hidden font-heading text-3xl font-bold tracking-wide text-gold-dark sm:text-4xl md:block">
                 PARA QUEM É ESTE CURSO
               </h2>
               <ul className="mb-10 space-y-3 font-body text-base text-brown sm:text-lg">
@@ -188,10 +206,29 @@ export default function Home() {
       {/* ===== COMO FUNCIONA O CURSO ===== */}
       <section className="bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
+          {/* Mobile: título + foto lado a lado */}
+          <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
+            <div className="inline-block border-b-2 border-gold pb-1">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark">
+                Como Funciona o Curso
+              </h2>
+            </div>
+            <div className="relative w-24 shrink-0">
+              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20">
+                <Image
+                  src="/vanusa/como-funciona.webp"
+                  alt="Vanuza Aires"
+                  fill
+                  className="object-cover object-top z-10"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-16">
             {/* Conteúdo */}
             <div className="flex-1">
-              <div className="mb-6 inline-block border-b-2 border-gold pb-1">
+              <div className="mb-6 hidden border-b-2 border-gold pb-1 md:inline-block">
                 <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark sm:text-3xl">
                   Como Funciona o Curso
                 </h2>
@@ -268,8 +305,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Foto — absolute a partir da divisória da seção */}
-            <div className="relative mx-auto w-64 shrink-0 max-md:hidden sm:w-72 md:absolute md:bottom-0 md:right-0 md:mx-0 md:w-[320px] lg:w-[500px]">
+            {/* Foto — desktop only: absolute bottom */}
+            <div className="relative hidden md:block md:absolute md:bottom-0 md:right-0 md:w-[320px] lg:w-[500px]">
               <div className="relative aspect-[2/4] w-full">
                 <Image
                   src="/vanusa/como-funciona.webp"
@@ -362,9 +399,33 @@ export default function Home() {
       {/* ===== FOTO + POLÍTICA DE INSCRIÇÃO ===== */}
       <section className="bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
+          {/* Mobile: título + foto lado a lado */}
+          <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
+            <div>
+              <h2 className="mb-1 font-heading text-3xl font-light tracking-widest text-beige-dark">
+                POLÍTICA
+              </h2>
+              <div className="inline-block border-b-2 border-gold pb-1">
+                <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-brown-dark">
+                  Política de Inscrição
+                </h3>
+              </div>
+            </div>
+            <div className="relative w-24 shrink-0">
+              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20">
+                <Image
+                  src="/vanusa/politica.webp"
+                  alt="Vanuza Aires"
+                  fill
+                  className="object-cover object-top z-10"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
-            {/* Foto — absolute a partir da divisória da seção */}
-            <div className="relative max-md:hidden mx-auto w-64 shrink-0 sm:w-72 md:absolute -bottom-12 md:bottom-0 md:left-20 md:mx-0 md:w-[340px] lg:w-[400px]">
+            {/* Foto — desktop only: absolute bottom */}
+            <div className="relative hidden md:block md:absolute md:bottom-0 md:left-20 md:w-[340px] lg:w-[400px]">
               <div className="relative aspect-[3/4] w-full">
                 <Image
                   src="/vanusa/politica.webp"
@@ -380,10 +441,10 @@ export default function Home() {
 
             {/* Política */}
             <div className="flex-1">
-              <h2 className="mb-2 font-heading text-5xl font-light tracking-widest text-beige-dark sm:text-7xl">
+              <h2 className="mb-2 hidden font-heading text-5xl font-light tracking-widest text-beige-dark sm:text-7xl md:block">
                 POLÍTICA
               </h2>
-              <div className="mb-6 inline-block border-b-2 border-gold pb-1">
+              <div className="mb-6 hidden border-b-2 border-gold pb-1 md:inline-block">
                 <h3 className="font-heading text-xl font-bold uppercase tracking-wider text-brown-dark sm:text-2xl">
                   Política de Inscrição
                 </h3>
@@ -414,14 +475,14 @@ export default function Home() {
         </div>
         <div className="relative mx-auto max-w-[1170px] px-5 max-md:py-16 sm:px-8 md:pt-30">
           <div className="relative flex flex-col gap-10 md:flex-row md:items-start md:gap-16">
-            {/* Foto — absolute a partir da divisória da seção */}
-            <div className="relative mx-auto w-72 shrink-0 sm:w-72 md:absolute -bottom-10 md:bottom-0 md:left-0 md:mx-0 md:w-[340px] lg:w-[400px]">
-              <div className="relative aspect-[3/4] w-full">
+            {/* Foto — mobile: circular centralizada (maior); desktop: absolute bottom */}
+            <div className="relative mx-auto w-32 shrink-0 md:absolute md:bottom-0 md:left-0 md:mx-0 md:w-[340px] lg:w-[400px]">
+              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20 md:aspect-[3/4] md:overflow-visible md:rounded-none md:bg-transparent">
                 <Image
                   src="/vanusa/quem-vai.webp"
                   alt="Vanuza Aires"
                   fill
-                  className="object-contain object-bottom z-10"
+                  className="object-cover md:object-contain object-top md:object-bottom z-10"
                 />
               </div>
             </div>
@@ -477,11 +538,44 @@ export default function Home() {
 
       {/* ===== INSCRIÇÕES E INFORMAÇÕES ===== */}
       <section className="bg-beige">
-        <div className="relative mx-auto max-w-[1170px] px-5 py-20 sm:px-8 md:py-54">
-          <div className="flex flex-col items-center gap-0 md:flex-row md:gap-16">
+        <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-54">
+          {/* Mobile: título + foto lado a lado */}
+          <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
+            <div className="inline-block border-b-2 border-gold pb-1">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark">
+                Inscrições e Informações:
+              </h2>
+            </div>
+            <div className="relative w-24 shrink-0">
+              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20">
+                <Image
+                  src="/vanusa/inscricoes.webp"
+                  alt="Vanuza Aires"
+                  fill
+                  className="object-cover object-top z-10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile: conteúdo abaixo */}
+          <div className="md:hidden">
+            <p className="mb-6 font-body text-base text-brown">
+              Entre em contato para garantir sua vaga.
+            </p>
+            <a
+              href="#"
+              className="inline-block w-full text-center rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl"
+            >
+              Garantir Minha Vaga
+            </a>
+          </div>
+
+          {/* Desktop layout */}
+          <div className="hidden md:flex md:flex-row md:gap-16">
             {/* CTA — lado esquerdo */}
-            <div className="flex-1 text-center md:text-left">
-              <div className="mb-4 max-md:mb-0 inline-block border-b-2 border-gold pb-1">
+            <div className="flex-1 text-left">
+              <div className="mb-4 inline-block border-b-2 border-gold pb-1">
                 <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark sm:text-3xl">
                   Inscrições e Informações:
                 </h2>
@@ -498,10 +592,10 @@ export default function Home() {
             </div>
 
             {/* Spacer invisível para manter o espaço da foto */}
-            <div className="hidden shrink-0 md:block md:w-[380px] max-md:w-[380px] lg:w-[500px]" />
+            <div className="shrink-0 md:w-[380px] lg:w-[500px]" />
 
-            {/* Foto — absolute na divisória de baixo, lado direito */}
-            <div className="relative mx-auto w-56 shrink-0 sm:w-64 md:absolute md:bottom-0 -bottom-20 right-0 max-md:w-[380px] md:right-5 md:mx-0 md:w-[380px] lg:w-[500px]">
+            {/* Foto — desktop only: absolute bottom right */}
+            <div className="absolute bottom-0 right-5 w-[380px] lg:w-[500px]">
               <div className="relative aspect-[3/4] w-full">
                 <Image
                   src="/vanusa/inscricoes.webp"
