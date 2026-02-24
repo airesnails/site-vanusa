@@ -39,7 +39,7 @@ export default function Home() {
 
           {/* Título — sobre o gradiente */}
           <div className="relative z-10 mt-0 pb-6 z-[16] text-center sm:pb-10">
-            <h1 className="font-heading text-5xl leading-tight font-light tracking-wide text-black sm:text-5xl md:text-6xl lg:text-8xl">
+            <h1 className="font-heading text-4xl leading-tight font-light tracking-wide text-black sm:text-5xl md:text-6xl lg:text-8xl">
               REFINAMENTO
               <br />
               DE TÉCNICA
@@ -255,12 +255,12 @@ export default function Home() {
       </section>
 
       {/* ===== COMO FUNCIONA O CURSO ===== */}
-      <section className="bg-beige">
+      <section className="overflow-hidden bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
           {/* Mobile: título + foto lado a lado */}
           <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
             <div className="inline-block border-b-2 border-gold pb-1">
-              <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark">
+              <h2 className="font-heading text-lg font-bold uppercase tracking-wide text-brown-dark">
                 Como Funciona o Curso
               </h2>
             </div>
@@ -461,12 +461,12 @@ export default function Home() {
       </section>
 
       {/* ===== FOTO + POLÍTICA DE INSCRIÇÃO ===== */}
-      <section className="bg-beige">
+      <section className="overflow-hidden bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
           {/* Mobile: título + foto lado a lado */}
           <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
             <div>
-              <h2 className="mb-1 font-heading text-3xl font-light tracking-widest text-beige-dark">
+              <h2 className="mb-1 font-heading text-2xl font-light tracking-wide text-beige-dark sm:text-3xl sm:tracking-widest">
                 POLÍTICA
               </h2>
               <div className="inline-block border-b-2 border-gold pb-1">
@@ -601,12 +601,12 @@ export default function Home() {
       </section>
 
       {/* ===== INSCRIÇÕES E INFORMAÇÕES ===== */}
-      <section className="bg-beige">
+      <section className="overflow-hidden bg-beige">
         <div className="relative mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-54">
           {/* Mobile: título + foto lado a lado */}
           <div className="mb-6 flex items-center justify-between gap-4 md:hidden">
             <div className="inline-block border-b-2 border-gold pb-1">
-              <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-brown-dark">
+              <h2 className="font-heading text-xl font-bold uppercase tracking-wide text-brown-dark">
                 Inscrições e Informações:
               </h2>
             </div>
