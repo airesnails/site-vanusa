@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Refinamento de Técnica - by Vanuza Aires",
     description:
       "Curso presencial exclusivo de refinamento técnico para profissionais da área de unhas. Alto nível de acabamento, mais segurança, mais lucro.",
-    url: "https://vanuzaaires.com",
+    url: "https://airesnails.com",
     siteName: "Refinamento de Técnica - Vanuza Aires",
     images: [
       {
