@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Raleway } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const raleway = Raleway({
-  variable: "--font-raleway",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -28,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${cormorant.variable} ${raleway.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         {children}
       </body>

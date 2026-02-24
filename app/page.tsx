@@ -1,8 +1,10 @@
 import Image from "next/image";
+import BotaoInscricao from "./components/BotaoInscricao";
+import TestimonialsLightbox from "./components/TestimonialsLightbox";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen overflow-x-hidden bg-cream">
       {/* ===== HERO SECTION ===== */}
       <section className="relative overflow-hidden bg-brown-dark">
         {/* Bandeira de fundo — full width */}
@@ -148,6 +150,16 @@ export default function Home() {
                   É um curso de refinamento técnico e evolução profissional.
                 </p>
               </div>
+
+              {/* CTA */}
+              <div className="mt-8 text-center">
+                <a
+                  href="#investimento"
+                  className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg"
+                >
+                  Ver Investimento →
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +168,7 @@ export default function Home() {
       {/* ===== O QUE VOCÊ VAI APRENDER ===== */}
       <section className="bg-cream">
         <div className="mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
-          <h2 className="mb-2 font-heading text-5xl font-light tracking-widest text-beige-dark sm:text-7xl lg:text-8xl">
+          <h2 className="mb-2 font-heading text-3xl font-light tracking-widest text-beige-dark sm:text-5xl md:text-7xl lg:text-8xl">
             APRENDER
           </h2>
           <h3 className="mb-8 font-heading text-2xl font-semibold italic text-gold-dark sm:text-3xl">
@@ -200,6 +212,45 @@ export default function Home() {
             Tudo pensado para que você aprenda, treine e consiga aplicar
             rapidamente no seu trabalho.
           </p>
+
+          {/* CTA */}
+          <div className="mt-10 text-center">
+            <a
+              href="#investimento"
+              className="inline-block rounded-full bg-gradient-to-r from-gold-dark to-gold px-10 py-5 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:shadow-2xl hover:scale-105 sm:text-lg"
+            >
+              ✨ Quero Garantir Minha Vaga
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== O QUE DIZEM NOSSAS ALUNAS ===== */}
+      <section className="bg-beige">
+        <div className="mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
+          <div className="mb-10 text-center">
+            <h2 className="mb-2 font-heading text-3xl font-light tracking-wide text-beige-dark sm:text-4xl md:text-5xl lg:text-6xl">
+              DEPOIMENTOS
+            </h2>
+            <h3 className="font-heading text-xl font-semibold italic text-gold-dark sm:text-2xl">
+              O que dizem nossas alunas
+            </h3>
+          </div>
+
+          <TestimonialsLightbox />
+
+          {/* CTA */}
+          <div className="mt-10 text-center">
+            <p className="mb-6 font-heading text-base italic text-brown sm:text-lg">
+              Faça parte da próxima turma de profissionais de sucesso
+            </p>
+            <a
+              href="#investimento"
+              className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg"
+            >
+              Quero Me Inscrever Agora
+            </a>
+          </div>
         </div>
       </section>
 
@@ -303,6 +354,16 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+              {/* CTA */}
+              <div className="mt-10">
+                <a
+                  href="#investimento"
+                  className="inline-block w-full rounded-full border-2 border-gold bg-white px-8 py-4 text-center font-body text-base font-semibold uppercase tracking-wider text-gold-dark shadow-lg transition-all hover:bg-beige-light hover:shadow-xl hover:scale-105 sm:text-lg"
+                >
+                  Conferir Valores →
+                </a>
+              </div>
             </div>
 
             {/* Foto — desktop only: absolute bottom */}
@@ -324,7 +385,7 @@ export default function Home() {
       </section>
 
       {/* ===== LOCAL DO CURSO / INVESTIMENTO / IMPORTANTE ===== */}
-      <section className="relative overflow-hidden bg-cream">
+      <section id="investimento" className="relative overflow-hidden bg-cream">
         <div className="absolute -top-10 right-0 font-heading text-[10rem] font-light leading-none tracking-[0.3em] text-beige-dark/30 sm:text-[14rem] lg:text-[18rem]">
           AIRES
         </div>
@@ -370,6 +431,9 @@ export default function Home() {
                   <p>• US$ 150 por semana</p>
                   <p>X6 = $900</p>
                 </div>
+              </div>
+              <div className="mt-6">
+                <BotaoInscricao className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl cursor-pointer" />
               </div>
             </div>
 
@@ -469,7 +533,7 @@ export default function Home() {
       </section>
 
       {/* ===== QUEM VAI MINISTRAR ===== */}
-      <section className="relative overflow-visible bg-cream">
+      <section className="relative overflow-hidden bg-cream">
         <div className="absolute top-0 left-0 font-heading text-[10rem] max-md:hidden font-light leading-none tracking-widest text-beige-dark/30 sm:text-[14rem] lg:text-[18rem]">
           MINISTRAR
         </div>
@@ -563,12 +627,7 @@ export default function Home() {
             <p className="mb-6 font-body text-base text-brown">
               Entre em contato para garantir sua vaga.
             </p>
-            <a
-              href="#"
-              className="inline-block w-full text-center rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl"
-            >
-              Garantir Minha Vaga
-            </a>
+            <BotaoInscricao className="inline-block w-full text-center rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl cursor-pointer" />
           </div>
 
           {/* Desktop layout */}
@@ -583,12 +642,7 @@ export default function Home() {
               <p className="mb-8 font-body text-base text-brown sm:text-lg">
                 Entre em contato para garantir sua vaga.
               </p>
-              <a
-                href="#"
-                className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl sm:text-lg"
-              >
-                Garantir Minha Vaga
-              </a>
+              <BotaoInscricao className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl sm:text-lg cursor-pointer" />
             </div>
 
             {/* Spacer invisível para manter o espaço da foto */}
@@ -618,11 +672,11 @@ export default function Home() {
           <h2 className="mt-2 font-heading text-4xl font-light tracking-wide text-gold-lighter sm:text-5xl lg:text-6xl">
             Turma exclusiva.
           </h2>
-          <div className="mt-10 flex items-center justify-center gap-3">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             {Array.from({ length: 12 }).map((_, i) => (
               <span
                 key={i}
-                className="font-heading text-2xl text-gold-lighter/40 sm:text-3xl"
+                className="font-heading text-xl text-gold-lighter/40 sm:text-3xl"
               >
                 ✦
               </span>

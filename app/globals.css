@@ -16,20 +16,22 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: #FFFDF8;
   color: #3D2E14;
-  font-family: var(--font-raleway), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 .font-heading {
-  font-family: var(--font-cormorant), serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .font-body {
-  font-family: var(--font-raleway), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
