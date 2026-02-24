@@ -3,11 +3,11 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
-    const { nome, telefone } = await request.json();
+    const { nome, email, telefone } = await request.json();
 
-    if (!nome || !telefone) {
+    if (!nome || !email || !telefone) {
       return NextResponse.json(
-        { error: "Nome e telefone são obrigatórios" },
+        { error: "Nome, email e telefone são obrigatórios" },
         { status: 400 }
       );
     }
@@ -75,6 +75,16 @@ export async function POST(request: Request) {
                       </tr>
                       <tr>
                         <td style="font-size:18px;font-weight:600;color:#3D2E14;">${nome}</td>
+                      </tr>
+                    </table>
+
+                    <!-- Email -->
+                    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:16px;">
+                      <tr>
+                        <td style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#8B7355;padding-bottom:4px;">Email</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:18px;font-weight:600;color:#3D2E14;">${email}</td>
                       </tr>
                     </table>
 

@@ -38,7 +38,7 @@ export default function Home() {
           </div>
 
           {/* Título — sobre o gradiente */}
-          <div className="relative z-10 mt-0 pb-6 z-[16] text-center sm:pb-10">
+          <div className="relative z-10 mt-0 pb-10 z-[16] text-center sm:pb-16">
             <h1 className="font-heading text-4xl leading-tight font-light tracking-wide text-black sm:text-5xl md:text-6xl lg:text-8xl">
               REFINAMENTO
               <br />
@@ -47,6 +47,21 @@ export default function Home() {
             <p className="mt-2 font-heading text-lg italic text-black/70 sm:text-xl md:text-2xl">
               by Vanuza Aires
             </p>
+            
+            {/* Frase descritiva */}
+            <p className="mx-auto mt-6 max-w-2xl font-body text-base leading-relaxed text-brown-dark sm:text-lg md:text-xl">
+              Refine sua técnica, ganhe agilidade e entregue resultados impecáveis que valorizam seu trabalho.
+            </p>
+
+            {/* CTA Button */}
+            <div className="mt-8">
+              <a
+                href="#investimento"
+                className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:bg-gold-dark hover:shadow-2xl hover:scale-105 sm:px-12 sm:py-5 sm:text-lg"
+              >
+                ✨ Quero Garantir Minha Vaga
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -54,7 +69,7 @@ export default function Home() {
       {/* ===== TURMA PRESENCIAL ===== */}
       <section className="bg-cream">
         <div className="mx-auto max-w-[1170px] px-5 py-16 sm:px-8 md:py-20">
-          <div className="mb-8 inline-block rounded-md bg-gold px-6 py-2">
+          <div className="mb-8 inline-block rounded-md bg-gold px-6 py-2 max-sm:mx-auto max-sm:block max-sm:text-center">
             <h2 className="font-heading text-xl font-bold tracking-wider text-white sm:text-2xl">
               TURMA - PRESENCIAL
             </h2>
@@ -187,7 +202,10 @@ export default function Home() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gold" />
-                Cutícula combinada (<strong>tesoura + broca</strong>)
+                <span>
+                  Cutícula combinada<br />
+                  <strong>(tesoura + broca)</strong>
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gold" />
@@ -476,7 +494,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative w-24 shrink-0">
-              <div className="relative aspect-square w-full overflow-hidden rounded-full bg-beige-dark/20">
+              <div className="relative w-full overflow-hidden rounded-full bg-beige-dark/20">
                 <Image
                   src="/vanusa/politica.webp"
                   alt="Vanuza Aires"
@@ -489,13 +507,13 @@ export default function Home() {
 
           <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
             {/* Foto — desktop only: absolute bottom */}
-            <div className="relative hidden md:block md:absolute md:bottom-0 md:left-20 md:w-[340px] lg:w-[400px]">
-              <div className="relative aspect-[3/4] w-full">
+            <div className="relative hidden md:block md:absolute md:top-0 md:bottom-0 md:left-20 md:w-[340px] lg:w-[400px]">
+              <div className="relative h-full w-full">
                 <Image
                   src="/vanusa/politica.webp"
                   alt="Vanuza Aires"
                   fill
-                  className="object-contain object-bottom z-10"
+                  className="object-contain object-center z-10"
                 />
               </div>
             </div>

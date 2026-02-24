@@ -13,6 +13,7 @@ export default function InscricaoModal({
 }) {
   const [step, setStep] = useState<ModalStep>("form");
   const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
   const [ddi, setDdi] = useState("+1");
   const [telefone, setTelefone] = useState("");
   const [sending, setSending] = useState(false);
@@ -36,6 +37,7 @@ export default function InscricaoModal({
   function resetAndClose() {
     setStep("form");
     setNome("");
+    setEmail("");
     setDdi("+1");
     setTelefone("");
     setSending(false);
@@ -44,7 +46,7 @@ export default function InscricaoModal({
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!nome.trim() || !telefone.trim()) return;
+    if (!nome.trim() || !email.trim() || !telefone.trim()) return;
 
     setSending(true);
 
@@ -52,7 +54,11 @@ export default function InscricaoModal({
     fetch("/api/send-lead", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nome: nome.trim(), telefone: `${ddi} ${telefone.trim()}` }),
+      body: JSON.stringify({ 
+        nome: nome.trim(), 
+        email: email.trim(),
+        telefone: `${ddi} ${telefone.trim()}` 
+      }),
     }).catch(() => {
       // silencioso
     });
@@ -95,7 +101,7 @@ export default function InscricaoModal({
                 htmlFor="nome"
                 className="mb-1 block font-body text-sm font-semibold text-brown-dark"
               >
-                Nome
+                Nome *
               </label>
               <input
                 id="nome"
@@ -110,10 +116,28 @@ export default function InscricaoModal({
 
             <div>
               <label
+                htmlFor="email"
+                className="mb-1 block font-body text-sm font-semibold text-brown-dark"
+              >
+                Email *
+              </label>
+              <input
+                id="email"
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="seu@email.com"
+                className="w-full rounded-lg border-2 border-beige-dark bg-beige-light px-4 py-3 font-body text-base text-brown-dark outline-none transition-colors placeholder:text-brown-light/60 focus:border-gold"
+              />
+            </div>
+
+            <div>
+              <label
                 htmlFor="telefone"
                 className="mb-1 block font-body text-sm font-semibold text-brown-dark"
               >
-                Telefone
+                Telefone *
               </label>
               <div className="flex gap-2">
                 <select

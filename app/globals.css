@@ -12,6 +12,12 @@
   --color-brown-dark: #3D2E14;
   --color-brown-light: #8B7355;
   --color-cream: #FFFDF8;
+  --animate-marquee: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
 }
 
 html {
