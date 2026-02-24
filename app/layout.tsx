@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Vanuza Aires" }],
   creator: "Vanuza Aires",
   publisher: "Aires Nails and Academy",
-  metadataBase: new URL("https://vanuzaaires.com"),
+  metadataBase: new URL("https://airesnails.com"),
   alternates: {
     canonical: "/",
   },
