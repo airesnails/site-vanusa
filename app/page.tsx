@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         {/* Gradiente de transição — full width, começa abaixo da metade da foto */}
-        <div className="absolute inset-x-0 bottom-0 z-[15] top-[35%] bg-gradient-to-b from-transparent via-cream to-cream" />
+        <div className="absolute inset-x-0 bottom-0 z-[15] top-[10%] bg-gradient-to-b from-transparent via-cream to-cream" />
 
         {/* Conteúdo centralizado */}
         <div className="relative mx-auto flex max-w-[1170px] flex-col items-center px-5 sm:px-8">
