@@ -80,6 +80,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "google-site-verification-code", // Substituir com código real do Google Search Console
+    other: {
+      "facebook-domain-verification": ["ebvvd2xlotn3yn165anl4mri56wj69"],
+    },
   },
 };
 
