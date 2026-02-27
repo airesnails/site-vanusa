@@ -55,12 +55,7 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="mt-8">
-              <a
-                href="#investimento"
-                className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:bg-gold-dark hover:shadow-2xl hover:scale-105 sm:px-12 sm:py-5 sm:text-lg"
-              >
-                ✨ Quero Garantir Minha Vaga
-              </a>
+              <BotaoInscricao className="inline-block rounded-full bg-gold px-10 py-4 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:bg-gold-dark hover:shadow-2xl hover:scale-105 sm:px-12 sm:py-5 sm:text-lg" />
             </div>
           </div>
         </div>
@@ -168,12 +163,7 @@ export default function Home() {
 
               {/* CTA */}
               <div className="mt-8 text-center">
-                <a
-                  href="#investimento"
-                  className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg"
-                >
-                  Ver Investimento →
-                </a>
+                <BotaoInscricao className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg" />
               </div>
             </div>
           </div>
@@ -233,12 +223,7 @@ export default function Home() {
 
           {/* CTA */}
           <div className="mt-10 text-center">
-            <a
-              href="#investimento"
-              className="inline-block rounded-full bg-gradient-to-r from-gold-dark to-gold px-10 py-5 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:shadow-2xl hover:scale-105 sm:text-lg"
-            >
-              ✨ Quero Garantir Minha Vaga
-            </a>
+            <BotaoInscricao className="inline-block rounded-full bg-gradient-to-r from-gold-dark to-gold px-10 py-5 font-body text-base font-bold uppercase tracking-wider text-white shadow-xl transition-all hover:shadow-2xl hover:scale-105 sm:text-lg" />
           </div>
         </div>
       </section>
@@ -262,12 +247,7 @@ export default function Home() {
             <p className="mb-6 font-heading text-base italic text-brown sm:text-lg">
               Faça parte da próxima turma de profissionais de sucesso
             </p>
-            <a
-              href="#investimento"
-              className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg"
-            >
-              Quero Me Inscrever Agora
-            </a>
+            <BotaoInscricao className="inline-block rounded-full bg-gold px-8 py-4 font-body text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-gold-dark hover:shadow-xl hover:scale-105 sm:text-lg" />
           </div>
         </div>
       </section>
@@ -375,12 +355,7 @@ export default function Home() {
 
               {/* CTA */}
               <div className="mt-10">
-                <a
-                  href="#investimento"
-                  className="inline-block w-full rounded-full border-2 border-gold bg-white px-8 py-4 text-center font-body text-base font-semibold uppercase tracking-wider text-gold-dark shadow-lg transition-all hover:bg-beige-light hover:shadow-xl hover:scale-105 sm:text-lg"
-                >
-                  Conferir Valores →
-                </a>
+                <BotaoInscricao className="inline-block w-full rounded-full border-2 border-gold bg-white px-8 py-4 text-center font-body text-base font-semibold uppercase tracking-wider text-gold-dark shadow-lg transition-all hover:bg-beige-light hover:shadow-xl hover:scale-105 sm:text-lg" />
               </div>
             </div>
 
