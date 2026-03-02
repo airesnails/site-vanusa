@@ -47,6 +47,10 @@ export default function Home() {
             <p className="mt-2 font-heading text-lg italic text-black/70 sm:text-xl md:text-2xl">
               by Vanuza Aires
             </p>
+
+            <div className="mt-4 inline-flex items-center justify-center rounded-full border border-gold bg-white/70 px-5 py-2 font-heading text-sm font-bold uppercase tracking-wider text-brown-dark shadow-sm backdrop-blur sm:text-base">
+              Dia 5 de abril
+            </div>
             
             {/* Frase descritiva */}
             <p className="mx-auto mt-6 max-w-2xl font-body text-base leading-relaxed text-brown-dark sm:text-lg md:text-xl">
